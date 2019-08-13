@@ -1,0 +1,25 @@
+{
+  "participants": [
+    {
+      "name": "Peter M\u00c3\u00bcsterman"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Peter M\u00c3\u00bcsterman",
+      "timestamp_ms": 1564921172149,
+      "content": "\u00f0\u009f\u0098\u00b1",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a0",
+          "actor": "Peter M\u00c3\u00bcsterman"
+        }
+      ],
+      "type": "Generic"
+    }
+  ],
+  "title": "Group Name",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "inbox/GroupName"
+}
