@@ -9,6 +9,9 @@ import codecs
 import re
 from functools import partial
 
+
+writeNames = True
+
 f = io.open('data/message_1.json', mode="r", encoding="latin-1")
 
 fix_mojibake_escapes = partial(
@@ -24,6 +27,9 @@ messages = data["messages"]
 with codecs.open("data/chatTrainData.txt", "w", "utf-8-sig") as writeFile:
     for i in range(len(messages)):
         try:
-            writeFile.write(messages[i]["content"] + '\r\n')
+            if writeNames:
+                writeFile.write(messages[i]["sender_name"] + ": " + messages[i]["content"] + '\r\n')
+            else:
+                writeFile.write(messages[i]["content"] + '\r\n')
         except KeyError:
             continue
